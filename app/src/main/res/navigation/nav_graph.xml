@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/PlayFragment">
+
+    <fragment
+        android:id="@+id/PlayFragment"
+        android:name="com.example.madlevel4task2.PlayFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_play">
+        <action
+            android:id="@+id/action_PlayFragment_to_GamesHistoryFragment"
+            app:destination="@id/GamesHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/GamesHistoryFragment"
+        android:name="com.example.madlevel4task2.GamesHistoryFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_games_history">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/PlayFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,16 @@
+A singleton pattern is used in the class that defines the database. What is the purpose of this pattern?
+- The Singleton pattern disables all other means of creating objects of a class except for the special creation method.
+
+Why should you load the data in a background thread?
+- zodat je applicatie niet vast loopt op het moment dat je aanvraag voor data lang duurd
+
+What are the three major components of ROOM and what are their responsibilities?
+- database: Contains the database holder and serves as the main access point for the underlying connection to your app's persisted, relational data.
+- Entity: Represents a table within the database
+- DAO: Contains the methods used for accessing the database.
+
+How can you extract the current database so that you can see the table, columns, and data?
+- met een van de volgende tools:
+https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/
+http://sqlitebrowser.org/
+http://sqliteviewer.flowsoft7.com/
